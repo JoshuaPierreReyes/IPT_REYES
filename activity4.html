@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <img src="../IPT_REYES1/docs/img/act4.png" alt="Banner Image" class="banner-image">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <img src="../IPT_REYES1/docs/img/act4.jpg" alt="Profile Image" class="pfp-image">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am a web developer passionate about creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Joshua Pierre B. Reyes! I specialize in back-end development and enjoy turning ideas into responsive websites. My tools of the trade are NodeJS, SQL, and JavaScript.</p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A simple portfolio website to showcase my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: To-Do App</h3>
+            <p>An app to help users manage tasks and improve productivity.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Gmail" required>
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joshua. All Rights Reserved.</p>
+    </footer>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1000; 
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+    width: 100%; /* Makes the image take the full width of the header */
+    max-width: 100px; /* Optional: Set a maximum width for larger screens */
+    height: auto; /* Ensures the image scales proportionally */
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 8rem;
+    text-align: center;
+}
+
+.home {
+    background: #f4f4f4;
+    text-align: center; /* Center the content */
+    padding: 50px 20px; 
+}
+
+.pfp-image {
+    width: 300px; /* Set the width of the profile picture */
+    height: 300px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border: 3px solid #fff; /* Optional: Add a white border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    display: inline-block; /* Ensure proper layout */
+    margin-bottom: 40px; /* Add some space below the image */
+}
+
+.about {
+    background: #fff;
+}
+
+.projects {
+    background: #f4f4f4;
+}
+
+.contact {
+    background: #fff;
+}
+
+.project {
+    margin: 2rem 0;
+}
+
+form {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 1.4rem 3rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+    </style>
+
+    <script src="../IPT_REYES1/docs/js/act4.js"></script>
+</body>
+</html>
